@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <title>Conversor de Monedas</title>
+</head>
+
+<body>
+
+    <div class="contenedor">
+        <h1>Conversor de Monedas</h1>
+                <h2>Pesos CLP</h2>
+                    <input type="number" id="inputPesos" placeholder="Ingresa monto en Pesos" >
+                    <h4>Moneda a convertir :</h4>
+                
+                        <select id="selectPesos">
+                            <option value="dolar">Dolar</option>
+                            <option value="euro">Euro</option>
+                            <option value="uf">UF</option>
+                            <option value="utm">UTM</option>
+                        </select>
+                        <button class="botonConvertir" id="buttonConvertir">Buscar</button>
+       
+            <p><span id="pesosDisplay"></span><span id="resultadoDisplay"></span> </p>
+
+        <div>
+            <canvas id="grafico"></canvas>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
